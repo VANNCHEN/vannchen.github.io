@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0;  padding: 0;}  /*消除顶部空白*/  
+
+
+
+.my-background{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/background/2.jpg");
+    opacity: 0.3;
+}
+
+body{ margin:0; height:100%} 
+
+html{ height:100%} /*兼容div高度100%*/ 
+
+.left,.right {
+	letter-spacing:1.4px;
+  }
+ 
+  .left {
+    float: left;
+    width: 40%;
+	font-size: 22px;
+	line-height: 300%;
+	margin: 0px 0px 0px 60px;
+ 
+  }
+ 
+  .right {
+    float: right;
+    width: 50%;
+	font-size: 18px;
+	line-height: 112%;
+	margin: 0px 25px 0px 0px;
+  }
+ 
+h3{
+	text-align: center; 
+	margin-left: 0%;
+}
+
+
+h1{
+	text-align: center;
+	font-family: SimHei;
+	font-weight: bold;
+}
+h2{
+	text-align: center; 
+	color: #696969;
+	font-size: 17px;
+	margin-left: 0%;
+}
+div{
+	font-family: KaiTi;
+}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0;  padding: 0;}  /*消除顶部空白*/  
+
+.left,.right {
+	text-align: center;
+  }
+ 
+  .left {
+    float: left;
+    width: 50%;
+ 
+  }
+ 
+  .right {
+    float: right;
+    width: 50%;
+  }
+
+.my-background{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/background/3.jpg");
+    opacity: 0.2;
+}
+
+body{ margin:0; height:100%} 
+
+html{ height:100%} /*兼容div高度100%*/ 
+
+
+h1{
+	text-align: center; 
+	font-family: SimHei;
+	font-weight: bold;
+}
+h3{
+	text-align: center; 
+	color: #696969;
+	margin-left: 0%;
+}
+div{
+	font-family: KaiTi;
+	font-weight: bold;
+	font-size: 19px;
+}
