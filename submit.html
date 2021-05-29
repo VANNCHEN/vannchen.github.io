@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="keywords" content="Zichen Cao,Personal websites,Resume,Boy,Vann Chen,曹梓宸">
+	<meta name="author" content="ZichenCao">
+	<meta name="description" content="This is a personal web page of Zichen Cao.">
+	
+	<script type="text/javascript">
+    var mychar = "Welcome to the Kings Music Store - Newsletter Signup";
+    alert(mychar);
+
+    
+
+	function validateForm(){
+		var x =document.forms["myForm"]["fname"].value;
+		var y =document.forms["myForm"]["lname"].value;
+		var z =document.forms["myForm"]["email"].value;
+		if (x == ""){
+			alert("You must to add your First Name");
+			return false;
+		}
+		else if(y == ""){
+			alert("You must to add your Last Name");
+			return false;
+		}
+		else if(z == ""){
+			alert("You must to add your E-mail");
+			return false;
+		}
+		
+		return true;
+	}
+        
+   </script>
+	
+	<title>The King's Music Store</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/submit.css">
+	<link rel="icon" type="image/x-icon" href="img/logo/logo.ico">
+</head>
+
+<body>
+<br>
+
+	<div class='ribbon'>
+		<a href="Zichen Cao_ Index.html"><span>Home</span></a>
+		<a href="introduction.html"><span>Self-Introduction</span></a>
+		<a href="School.html"><span>MY School</span></a>
+		<a href="achievement.html"><span>Achievement</span></a>
+		<a href="poem.html" ><span>My Poem</span></a>
+		<a href="contact.html"><span>Contact</span></a>
+
+	</div>
+<br><br><br><br>
+
+
+<fieldset>
+  <legend>Welcome to register the membership of this music website.  You can register by submitting this form. <br>We will provide you with better service.</legend><br>
+  <form name="myForm" action="http://infotech.scu.edu.au/cgi-bin/echo_form " onsubmit="return validateForm()" method="post">
+     First Name:
+    <input type="text" name="fname" maxlength="60">
+	<br><br>
+    Last Name:
+    <input type="text" name="lname" maxlength="60">
+    <br>
+    <br>
+    E-mail:
+    <input type="text" name="email" size="40">
+    <br>
+    <br>
+	Phone Number:
+    <input type="text" name="phone" size="27">
+    <br>
+	<br>
+    <fieldset>
+      <legend>Your Age:</legend>
+      <input type="checkbox" value="15-25">
+      15-25<br>
+      <input type="checkbox" value="26-35">
+      26-35<br>
+      <input type="checkbox" value="36-45">
+      36-45<br>
+      <input type="checkbox" value="46-55">
+      46-55<br>
+      <input type="checkbox" value="55+">
+      55+<br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>The style of music you are interested in:</legend>
+      <input type="checkbox" value="Heavy Metal">
+      Heavy Metal<br>
+	  <input type="checkbox" value="R & B">
+      R & B<br>
+      <input type="checkbox" value="Country and Western">
+      Country and Western<br>
+      <input type="checkbox" value="Classical">
+      Classical<br>
+      <input type="checkbox" value="Rock & Roll">
+      Rock & Roll<br>
+      <input type="checkbox" value="Pop">
+      Pop<br>
+      <input type="checkbox" value="Folk">
+      Folk<br>
+      <input type="checkbox" value="Blues">
+      Blues<br>
+      <input type="checkbox" value="Jazz">
+      Jazz<br>
+      <input type="checkbox" value="Disco">
+      Disco<br>
+      <input type="checkbox" value="Opera">
+      Opera<br>
+    </fieldset>
+    <br>
+    <p>Other types of music：</p>
+	<textarea name="otherm" id="otherm" cols="80" rows="5"></textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+    <br>
+    <input type="reset" value="Reset">
+    <br><br>
+	<a class="backlink" href="introduction.html">&larr; Back to MY introduction</a>
+    <br><br>
+  </form>
+</fieldset>
+</body>
+
+</html>
