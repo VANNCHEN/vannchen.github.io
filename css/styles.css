@@ -60,7 +60,7 @@
     justify-content: center;
     left: 0;
     right: 0;
-    top: 358px;
+    top: 428px;
     margin: auto;
     bottom: 0;
     color: #fff;
@@ -74,7 +74,7 @@
     justify-content: center;
     left: 0;
     right: 0;
-    top: 420px;
+    top: 490px;
     margin: auto;
     bottom: 0;
     color: #fff;
@@ -88,7 +88,7 @@
     justify-content: center;
     left: 0;
     right: 0;
-    top: 520px;
+    top: 598px;
     margin: auto;
     bottom: 0;
     color: #fff;
@@ -240,4 +240,20 @@
 }
 .footer span {
   font-style: italic;
+}
+
+
+.logo{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-image: url(../img/logo/logo.jpg);
+	background-position: -35px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	box-shadow: 2px 3px 27px 7px #D9D9D9;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }

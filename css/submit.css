@@ -1,49 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
-* { margin: 0;  padding: 0;}  /*消除顶部空白*/  
+ 
 
-
-body{
-	background-color: #CCFFFF;
+body {
+    background: url(../img/background/music.jpg) no-repeat;
+    background-size: cover;
+	font-size: 19px;
+    margin: 0;
 }
 
-
-
-#con a:link, a:visited {
-  background-color: white;
-  color: black;
-  border: 2px solid green;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-#con a:hover, a:active {
-  background-color: green;
-  color: white;
-}
-
-.left,.right {
-	text-align: center;
-  }
- 
-  .left {
-    float: left;
-    width: 50%;
- 
-  }
- 
-  .right {
-    float: right;
-    width: 50%;
-  }
-
-
-body{ margin:0; height:100%} 
-
-html{ height:100%} /*兼容div高度100%*/ 
 
 
 h1{
@@ -61,6 +27,7 @@ div{
 	font-weight: bold;
 	font-size: 19px;
 }
+
 
 .ribbon {
     display: flex;
@@ -134,35 +101,4 @@ div{
     right: 0;
     border-left: 0.5em solid #9B8651;
     border-bottom: 0.5em solid #fff;
-}
-
-
-
-#foot {
-  width: 100%;
-  overflow: hidden;
-
-  margin-top: 420px;
-}
-.main {
-  width: 1200px;
-  margin: 0 auto;
-}
-.footer {
-  width: 100%;
-  overflow: hidden;
-  height: 60px;
-  text-align: center;
-  border-top: 1px solid #333;
-  font-size: 14px;
-  color: #0;
-  line-height: 80px;
-}
-.footer p {
-  text-decoration: underline;
-  text-align: center;
-
-}
-.footer span {
-  font-style: italic;
 }

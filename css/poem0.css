@@ -7,7 +7,89 @@ body{
 	background-color: #CCFFFF;
 }
 
-a:link, a:visited {
+
+
+
+
+.ribbon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    margin: auto;
+}
+
+.ribbon:after,
+.ribbon:before {
+    margin-top: 0.5em;
+    content: "";
+    display: flex;
+    ;
+    border: 1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color: transparent;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+}
+
+.ribbon a:link,
+.ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background: #FFD204;
+    margin-top: 0;
+}
+
+.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+
+
+
+
+#po a:link, a:visited {
   background-color: white;
   color: black;
   border: 2px solid green;
@@ -17,10 +99,11 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+
+#po a:hover, a:active {
   background-color: green;
   color: white;
-}
+	}
 
 .left,.right {
 	text-align: center;
@@ -57,4 +140,87 @@ div{
 	font-family: KaiTi;
 	font-weight: bold;
 	font-size: 19px;
+}
+
+
+
+#foot {
+  width: 100%;
+  overflow: hidden;
+  background: #fec8fe;
+  margin-top: 0px;
+}
+#foot ul {
+  padding-bottom: 20px;
+}
+#foot li {
+  width: 360px;
+  float: left;
+  list-style: none;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+#foot li h1 {
+  font-size: 30px;
+  color: #424848;
+  padding: 30px 0 0 100px;
+}
+#foot li h2 {
+  font-size: 18px;
+  color: #424848;
+  font-weight: normal;
+  line-height: 40px;
+  margin-top: 30px;
+  padding-left: 150px;
+}
+#foot li h3 {
+  font-size: 18px;
+  color: #424848;
+  font-weight: normal;
+  line-height: 40px;
+  margin-top: 30px;
+  padding-left: 0px;
+}
+#foot li h4 {
+  font-size: 14px;
+  color: #424848;
+  font-weight: normal;
+  line-height: 40px;
+  padding-left: 60px;
+}
+#foot li a {
+  margin-left:65px;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #424848;
+}
+
+#foot li a:hover {
+  text-decoration: underline;
+}
+#foot li img {
+  padding-top: 10px;
+}
+.clear {
+  clear: both;
+}
+.footer {
+  width: 100%;
+  overflow: hidden;
+  height: 80px;
+  text-align: center;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #0;
+  line-height: 80px;
+}
+.footer p {
+  text-decoration: underline;
+  text-align: center;
+
+}
+.footer span {
+  font-style: italic;
 }

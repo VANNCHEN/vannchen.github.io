@@ -4,63 +4,57 @@
 * { margin: 0;  padding: 0;}  /*消除顶部空白*/  
 
 
-body{
-	background-color: #CCFFFF;
+
+body {
+    background: url(../img/background/4.jpg) no-repeat;
+    background-size: cover;
+	font-size: 18.5px;
+    margin: 0;
 }
 
-
-
-#con a:link, a:visited {
-  background-color: white;
-  color: black;
-  border: 2px solid green;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+*{
+    box-sizing: border-box;
 }
 
-#con a:hover, a:active {
-  background-color: green;
-  color: white;
-}
-
-.left,.right {
-	text-align: center;
-  }
- 
-  .left {
+.column{
     float: left;
-    width: 50%;
- 
-  }
- 
-  .right {
-    float: right;
-    width: 50%;
-  }
-
-
-body{ margin:0; height:100%} 
-
-html{ height:100%} /*兼容div高度100%*/ 
-
-
-h1{
-	text-align: center; 
-	font-family: SimHei;
-	font-weight: bold;
+    padding: 10px;
 }
-h3{
-	text-align: center; 
-	color: #696969;
-	margin-left: 0%;
+.column.side {
+    width: 33%;
+    padding:10px;
 }
-div{
-	font-family: KaiTi;
-	font-weight: bold;
-	font-size: 19px;
+.column.middle {
+    width: 34%;
 }
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+tr.bc1 {
+    color: black;
+    background-color: #CC9966;
+    font-weight: lighter;
+    font-size: 20px;
+}
+tr.bc2 {
+    color: black;
+    background-color: #FFFFCC;
+    font-weight: lighter;
+    font-size: 20px;
+}
+tr.bc3 {
+    color: black;
+    background-color: #FFFFCC;
+
+    font-size: 21px;
+}
+
+
+
 
 .ribbon {
     display: flex;
@@ -134,35 +128,4 @@ div{
     right: 0;
     border-left: 0.5em solid #9B8651;
     border-bottom: 0.5em solid #fff;
-}
-
-
-
-#foot {
-  width: 100%;
-  overflow: hidden;
-
-  margin-top: 420px;
-}
-.main {
-  width: 1200px;
-  margin: 0 auto;
-}
-.footer {
-  width: 100%;
-  overflow: hidden;
-  height: 60px;
-  text-align: center;
-  border-top: 1px solid #333;
-  font-size: 14px;
-  color: #0;
-  line-height: 80px;
-}
-.footer p {
-  text-decoration: underline;
-  text-align: center;
-
-}
-.footer span {
-  font-style: italic;
 }

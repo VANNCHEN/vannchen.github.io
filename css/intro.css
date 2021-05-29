@@ -5,17 +5,28 @@
 
 
 
-.my-background{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-image: url("../img/background/2.jpg");
-    opacity: 0.3;
+#Tabl table{
+	border-collapse: collapse;
+	letter-spacing:0.5px;
+
+}
+		
+#Tabl table, th, td{
+	border: 1px solid #000000;
+	letter-spacing:0.5px;
 }
 
-body{ margin:0; height:100%} 
 
-html{ height:100%} /*兼容div高度100%*/ 
+body {
+    background: url(../img/background/4.jpg) no-repeat;
+    background-size: cover;
+	font-size: 18.5px;
+    margin: 0;
+}
+
+ 
+
+
 
 .left,.right {
 	letter-spacing:1.4px;
@@ -23,17 +34,17 @@ html{ height:100%} /*兼容div高度100%*/
  
   .left {
     float: left;
-    width: 40%;
-	font-size: 22px;
-	line-height: 300%;
+    width: 50%;
+	font-size: 18px;
+	line-height: 200%;
 	margin: 0px 0px 0px 60px;
  
   }
  
   .right {
     float: right;
-    width: 50%;
-	font-size: 18px;
+    width: 40%;
+	font-size: 19px;
 	line-height: 112%;
 	margin: 0px 25px 0px 0px;
   }
@@ -58,3 +69,152 @@ h2{
 div{
 	font-family: KaiTi;
 }
+
+
+.ribbon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    margin: auto;
+}
+
+.ribbon:after,
+.ribbon:before {
+    margin-top: 0.5em;
+    content: "";
+    display: flex;
+    ;
+    border: 1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color: transparent;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+}
+
+.ribbon a:link,
+.ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background: #FFD204;
+    margin-top: 0;
+}
+
+.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+
+#foot {
+  width: 100%;
+  overflow: hidden;
+  background: #d4ceff;
+  margin-top: 0px;
+}
+#foot ul {
+  padding-bottom: 20px;
+}
+#foot li {
+  width: 360px;
+  float: left;
+  list-style: none;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+#foot li h1 {
+  font-size: 30px;
+  color: #424848;
+  padding: 30px 0 0 100px;
+}
+#foot li h2 {
+  font-size: 18px;
+  color: #424848;
+  font-weight: normal;
+  line-height: 40px;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+#foot li h3 {
+  font-size: 14px;
+  color: #424848;
+  font-weight: normal;
+  line-height: 40px;
+  padding-left: 60px;
+}
+#foot li a {
+  margin-left:80px;
+  font-size: 16px;
+  margin-top: 20px;
+  color: #424848;
+}
+#foot li a:hover {
+  text-decoration: underline;
+}
+#foot li img {
+  padding-top: 10px;
+}
+.clear {
+  clear: both;
+}
+.footer {
+  width: 100%;
+  overflow: hidden;
+  height: 80px;
+  text-align: center;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #0;
+  line-height: 80px;
+}
+.footer p {
+  text-decoration: underline;
+  text-align: center;
+
+}
+.footer span {
+  font-style: italic;
+}
+
