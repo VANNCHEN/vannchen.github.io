@@ -44,29 +44,13 @@ IP-CIDR,116.211.202.206/32,StreamingSE
 IP-CIDR,116.211.202.216/32,StreamingSE
 
 
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Bahamut
-# ~ KKTV
-USER-AGENT,KKTV*,Bahamut
-USER-AGENT,com.kktv.ios.kktv*,Bahamut
-DOMAIN-SUFFIX,kktv.com.tw,Bahamut
-DOMAIN-SUFFIX,kktv.me,Bahamut
-DOMAIN,kktv-theater.kk.stream,Bahamut
-# ~ Bahamut 
-USER-AGENT,Anime*,Bahamut
-DOMAIN-SUFFIX,bahamut.com.tw,Bahamut
-DOMAIN-SUFFIX,gamer.com.tw,Bahamut
-DOMAIN,gamer-cds.cdn.hinet.net,Bahamut
-DOMAIN,gamer2-cds.cdn.hinet.net,Bahamut
-# ~ Manhuaren
-DOMAIN-KEYWORD,manhuaren,Bahamut
-HOST-SUFFIX, cdnmanhua.net, Bahamut
-HOST-SUFFIX, cdndm5.com, 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Spotify
 # ~ Spotify 
-USER-AGENT,Spotify*,Bahamut
-DOMAIN-SUFFIX,pscdn.co,Bahamut
-DOMAIN-SUFFIX,scdn.co,Bahamut
-DOMAIN-SUFFIX,spotify.com,Bahamut
-DOMAIN-SUFFIX,spoti.fi,Bahamut
+USER-AGENT,Spotify*,Spotify
+DOMAIN-SUFFIX,pscdn.co,Spotify
+DOMAIN-SUFFIX,scdn.co,Spotify
+DOMAIN-SUFFIX,spotify.com,Spotify
+DOMAIN-SUFFIX,spoti.fi,Spotify
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Youtube
 # ~ Youtube
@@ -829,25 +813,11 @@ USER-AGENT,Roam*,PROXY
 
 # (The Most Popular Sites)
 # > Apple
-# >> Apple URL Shortener
-DOMAIN-SUFFIX,appsto.re,PROXY
 # >> iBooks Store download
 DOMAIN,books.itunes.apple.com,PROXY
 # >> iTunes Store Moveis Trailers
 DOMAIN,hls.itunes.apple.com,PROXY
-# >> Spotlight
-DOMAIN,api-glb-sea.smoot.apple.com,PROXY
-# >> Dictionary
-DOMAIN,lookup-api.apple.com,PROXY
-# >> Apple News and Apple Map TOMTOM Version
-DOMAIN,gspe1-ssl.ls.apple.com,PROXY
-USER-AGENT,AppleNews*,PROXY
-USER-AGENT,com.apple.news*,PROXY
-DOMAIN-SUFFIX,apple.news,PROXY
-DOMAIN,news-client.apple.com,PROXY
-DOMAIN,news-edge.apple.com,PROXY
-DOMAIN,news-events.apple.com,PROXY
-DOMAIN,apple.comscoreresearch.com,PROXY
+
 # > Google
 DOMAIN-SUFFIX,abc.xyz,PROXY
 DOMAIN-SUFFIX,android.com,PROXY
